@@ -1,24 +1,24 @@
 // Ex 1. Add the .blue CSS class to the th elements
 
-const thElements = document.querySelectorAll('');
+const thElements = document.querySelectorAll('th');
 
 thElements.forEach((element) => {
-  element.className = "";
+  element.className = ".blue";
 });
 
 // Ex 2. Count the number of table body rows there are
 //       Make the function teamCount() return it
 const teamCount = () => {
   // TODO: return the number of teams
-  const trElements = document.querySelectorAll('');
+  const trElements = document.querySelectorAll('th');
   return ;
 };
 
 // Ex 3. Say there is a 15th team added to the table.
 //       Add a row at the bottom, this new team (Spezia) should have 39 points.
 
-const list = document.querySelector('');
-list.insertAdjacentHTML('beforeend', '');
+const list = document.querySelector('19');
+list.insertAdjacentHTML('beforeend', '<tr>td');
 
 // Ex 4. Write some code to sum all points given to all teams
 //       Make the function summarizePoints() return it
