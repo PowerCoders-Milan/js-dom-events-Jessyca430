@@ -10,15 +10,15 @@ thElements.forEach((element) => {
 //       Make the function teamCount() return it
 const teamCount = () => {
   // TODO: return the number of teams
-  const trElements = document.querySelectorAll('th');
+  const trElements = document.querySelectorAll('tr');
   return ;
 };
 
 // Ex 3. Say there is a 15th team added to the table.
 //       Add a row at the bottom, this new team (Spezia) should have 39 points.
 
-const list = document.querySelector('19');
-list.insertAdjacentHTML('beforeend', '<tr>td');
+const list = document.querySelector('tbody');
+list.insertAdjacentHTML('beforeend', '<tr><td>15</td><td>Spezia</td><td>39</td></tr>');
 
 // Ex 4. Write some code to sum all points given to all teams
 //       Make the function summarizePoints() return it
@@ -30,10 +30,10 @@ const summarizePoints = () => {
 
 // Ex 5. Change the background color of all `<th>` cells to #DDF4FF
 
-const thEl = document.querySelectorAll('');
+const thEl = document.querySelectorAll('th');
 
 thEl.forEach((element) => {
-  element.style.backgroundColor = "";
+  element.style.backgroundColor = "#DDF4FF";
 });
 
 
