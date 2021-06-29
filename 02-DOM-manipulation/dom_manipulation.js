@@ -3,7 +3,7 @@
 const thElements = document.querySelectorAll('th');
 
 thElements.forEach((element) => {
-  element.className = ".blue";
+  element.className = '.blue';
 });
 
 // Ex 2. Count the number of table body rows there are
@@ -11,21 +11,29 @@ thElements.forEach((element) => {
 const teamCount = () => {
   // TODO: return the number of teams
   const trElements = document.querySelectorAll('tr');
-  return ;
+  return trElements.length;
 };
 
 // Ex 3. Say there is a 15th team added to the table.
 //       Add a row at the bottom, this new team (Spezia) should have 39 points.
 
 const list = document.querySelector('tbody');
-list.insertAdjacentHTML('beforeend', '<tr><td>15</td><td>Spezia</td><td>39</td></tr>');
+list.insertAdjacentHTML("beforeend", "<tr><td>15</td><td>Spezia</td><td>39</td></tr>");
 
 // Ex 4. Write some code to sum all points given to all teams
 //       Make the function summarizePoints() return it
 const summarizePoints = () => {
+ const teamPoints = document.querySelectorAll('tbody tr td:last-child');
+ let sum = 0;
+  teamPoints.forEach(teamPoint => {
+    sum += parseInt(teamPoint.innerText)
+  })
   // TODO: return the sum
-  return ;
+  return `Total: ${sum}`;
 };
+
+document.querySelector("#sum").innerText = summarizePoints(); 
+console.log(summarizePoints());
 
 
 // Ex 5. Change the background color of all `<th>` cells to #DDF4FF
